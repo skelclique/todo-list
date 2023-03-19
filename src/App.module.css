@@ -1,0 +1,39 @@
+main {
+  max-width: 46rem;
+  margin: 0 auto;
+  transform: translateY(-2rem);
+  padding: 0 2rem;
+}
+
+section {
+  margin-top: 4rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.header div {
+  font-weight: bold;
+  font-size: 0.875rem;
+  display: flex;
+  gap: 0.5rem;
+} 
+
+.header div:first-of-type {
+  color: var(--blue-500);
+}
+
+.header div:last-of-type {
+  color: var(--purple-500);
+}
+
+.header span {
+  background: var(--gray-400);
+  color: var(--gray-200);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
