@@ -1,0 +1,71 @@
+.taskBox {
+  background: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+
+  padding: 1rem;
+  height: 4.5rem;
+
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.taskBox p {
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.checkbox {
+  width: 1rem;
+  height: 1rem;
+
+  border-radius: 999px;
+  border: 3px solid var(--blue-500);
+  
+  cursor: pointer;
+  transition: background-color 0.1s, border-color 0.1s;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  
+  color: var(--gray-100);
+}
+
+.checkbox:hover {
+  background: rgba(30, 111, 159, 20%);
+  border-color: var(--blue-700);
+}
+
+.checkboxChecked {
+  background: var(--purple-700) !important;
+  border-color: var(--purple-700) !important;
+}
+
+.checkboxChecked:hover {
+  background: var(--purple-500) !important;
+  border-color: var(--purple-500) !important;
+}
+
+.taskBox button:last-of-type {
+  background: transparent;
+  border: 0;
+  align-self: flex-start;
+  color: var(--gray-300);
+  cursor: pointer;
+
+  transition: background-color 0.1s;
+  display: flex;
+  border-radius: 4px;
+}
+
+.taskBox button:last-of-type:hover {
+  color: var(--red-500);
+}
+
+.taskBox button:last-of-type svg {
+  justify-self: flex-end;
+}
