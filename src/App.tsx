@@ -45,7 +45,7 @@ export function App() {
           ) : (
             tasks
             .slice()
-            
+            .sort(task => task.isCompleted ? 1 : -1)
             .map((task) => (
               <TaskBox 
                 key={task.id}
